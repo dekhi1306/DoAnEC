@@ -14,21 +14,21 @@ else
 {
     @if (product.Editing)
     {
-        <h3>Edit "@product.Title"</h3>
+        <h3>Sửa "@product.Title"</h3>
     }
     else if (product.IsNew)
     {
-        <h3>Create a new Product</h3>
+        <h3>Thêm sản phẩm mới</h3>
     }
 
     <EditForm Model="product" OnValidSubmit="AddOrUpdateProduct">
         <DataAnnotationsValidator></DataAnnotationsValidator>
         <div class="mb-0">
-            <label for="title">Title</label>
+            <label for="title">Tên</label>
             <InputText id="title" @bind-Value="product.Title" class="form-control"></InputText>
         </div>
         <div class="mb-0">
-            <label for="imageUrl">Image Url</label>
+            <label for="imageUrl">Đường dẫn hình</label>
             <InputText id="imageUrl" @bind-Value="product.ImageUrl" class="form-control"></InputText>
         </div>
         <div class="mb-0" style="display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center;">
@@ -48,7 +48,7 @@ else
                             <MudButton Variant="Variant.Filled"
                            Color="Color.Error"
                            OnClick="@(() => RemoveImage(image.Id))">
-                                Remove
+                                Xoá
                             </MudButton>
                         </MudCardActions>
                     </MudCard>
@@ -56,19 +56,19 @@ else
             }
         </div>
         <div class="mb-0">
-            <label for="images">Image(s)</label>
+            <label for="images">Hình ảnh</label>
             <InputFile id="images" OnChange="OnFileChange" multiple class="form-control"></InputFile>
         </div>
         <div class="mb-0">
-            <label for="description">Description</label>
+            <label for="description">Mô tả</label>
             <InputTextArea id="description" @bind-Value="product.Description" class="form-control"></InputTextArea>
         </div>
         <hr />
         <div class="header">
-            <div class="col">Product Type / Variant</div>
-            <div class="col">Price</div>
-            <div class="col">Original Price</div>
-            <div class="col">Visible</div>
+            <div class="col">Dung tích</div>
+            <div class="col">Giá bán</div>
+            <div class="col">Giá gốc</div>
+            <div class="col">Hiển thị</div>
             <div class="col"></div>
         </div>
         @foreach (var variant in product.Variants)
@@ -99,11 +99,11 @@ else
     </div>
         }
         <button type="button" class="btn btn-primary" @onclick="AddVariant">
-            <i class="oi oi-plus"></i> Add Variant
+            <i class="oi oi-plus"></i> Thêm dung tích
         </button>
         <hr />
         <div class="mb-0">
-            <label for="category">Category</label>
+            <label for="category">Thương hiệu</label>
             <InputSelect id="category" @bind-Value="product.CategoryId" class="form-control">
                 @foreach (var category in CategoryService.AdminCategories)
                 {
@@ -114,11 +114,11 @@ else
     <hr />
     <div class="form-check">
         <InputCheckbox id="featured" @bind-Value="product.Featured" class="form-check-input"></InputCheckbox>
-        <label for="featured" class="form-check-label">Featured</label>
+        <label for="featured" class="form-check-label">Đặc sắc</label>
     </div>
     <div class="form-check">
         <InputCheckbox id="visible" @bind-Value="product.Visible" class="form-check-input"></InputCheckbox>
-        <label for="visible" class="form-check-label">Visible</label>
+        <label for="visible" class="form-check-label">Hiển thị</label>
     </div>
     <hr />
     <button type="submit" class="btn btn-primary float-end">@btnText</button>
@@ -127,7 +127,7 @@ else
     @if (!product.IsNew)
     {
         <button type="button" class="btn btn-danger float-start" @onclick="DeleteProduct">
-            Delete Product
+            Xoá sản phẩm
         </button>
     }
 }
@@ -139,7 +139,7 @@ else
     Product product = new Product();
     bool loading = true;
     string btnText = "";
-    string msg = "Loading...";
+    string msg = "Đang tải...";
 
     protected override async Task OnInitializedAsync()
     {
@@ -152,19 +152,19 @@ else
         if (Id == 0)
         {
             product = new Product { IsNew = true };
-            btnText = "Create Product";
+            btnText = "Tạo sản phẩm";
         }
         else
         {
             Product dbProduct = (await ProductService.GetProduct(Id)).Data;
             if (dbProduct == null)
             {
-                msg = $"Product with Id '{Id}' does not exist!";
+                msg = $"Sản phẩm với Id '{Id}' không tồn tại!";
                 return;
             }
             product = dbProduct;
             product.Editing = true;
-            btnText = "Update Product";
+            btnText = "Cập nhật sản phẩm";
         }
         loading = false;
     }
@@ -210,7 +210,7 @@ else
     async void DeleteProduct()
     {
         bool confirmed = await JSRuntime.InvokeAsync<bool>("confirm",
-            $"Do you really want to delete '{product.Title}'?");
+            $"Bạn muốn xoá sản phẩm '{product.Title}'?");
         if (confirmed)
         {
             await ProductService.DeleteProduct(product);

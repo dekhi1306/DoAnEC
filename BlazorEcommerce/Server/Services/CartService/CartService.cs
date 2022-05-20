@@ -115,7 +115,7 @@ namespace BlazorEcommerce.Server.Services.CartService
                 {
                     Data = false,
                     Success = false,
-                    Message = "Cart item does not exist."
+                    Message = "Không có sản phẩm nào trong giỏ hàng."
                 };
             }
 
@@ -136,7 +136,7 @@ namespace BlazorEcommerce.Server.Services.CartService
                 {
                     Data = false,
                     Success = false,
-                    Message = "Cart item does not exist."
+                    Message = "Không có sản phẩm nào trong giỏ hàng."
                 };
             }
 

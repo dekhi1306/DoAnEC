@@ -32,12 +32,12 @@ namespace BlazorEcommerce.Server.Services.AuthService
             if (user == null)
             {
                 response.Success = false;
-                response.Message = "User not found.";
+                response.Message = "Tên đăng nhập không tồn tại.";
             }
             else if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
             {
                 response.Success = false;
-                response.Message = "Wrong password.";
+                response.Message = "Sai mật khẩu.";
             }
             else
             {
@@ -54,7 +54,7 @@ namespace BlazorEcommerce.Server.Services.AuthService
                 return new ServiceResponse<int>
                 {
                     Success = false,
-                    Message = "User already exists."
+                    Message = "Tên đăng nhập đã tồn tại."
                 };
             }
 
@@ -66,7 +66,7 @@ namespace BlazorEcommerce.Server.Services.AuthService
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            return new ServiceResponse<int> { Data = user.Id, Message = "Registration successful!" };
+            return new ServiceResponse<int> { Data = user.Id, Message = "Đăng kí thành công!" };
         }
 
         public async Task<bool> UserExists(string email)
@@ -131,7 +131,7 @@ namespace BlazorEcommerce.Server.Services.AuthService
                 return new ServiceResponse<bool>
                 {
                     Success = false,
-                    Message = "User not found."
+                    Message = "Tên đăng nhập không tồn tại"
                 };
             }
 
@@ -142,7 +142,7 @@ namespace BlazorEcommerce.Server.Services.AuthService
 
             await _context.SaveChangesAsync();
 
-            return new ServiceResponse<bool> { Data = true, Message = "Password has been changed." };
+            return new ServiceResponse<bool> { Data = true, Message = "Mật khẩu đã được đổi." };
         }
 
         public async Task<User> GetUserByEmail(string email)

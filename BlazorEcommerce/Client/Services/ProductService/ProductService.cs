@@ -10,7 +10,7 @@
         }
 
         public List<Product> Products { get; set; } = new List<Product>();
-        public string Message { get; set; } = "Loading products...";
+        public string Message { get; set; } = "Đang tải sản phẩm...";
         public int CurrentPage { get; set; } = 1;
         public int PageCount { get; set; } = 0;
         public string LastSearchText { get; set; } = string.Empty;
@@ -39,7 +39,7 @@
             CurrentPage = 1;
             PageCount = 0;
             if (AdminProducts.Count == 0)
-                Message = "No products found.";
+                Message = "Không tìm thấy sản phẩm nào.";
         }
 
         public async Task<ServiceResponse<Product>> GetProduct(int productId)
@@ -60,7 +60,7 @@
             PageCount = 0;
 
             if (Products.Count == 0)
-                Message = "No products found";
+                Message = "Không tìm thấy sản phẩm nào.";
 
             ProductsChanged.Invoke();
         }
@@ -83,7 +83,7 @@
                 CurrentPage = result.Data.CurrentPage;
                 PageCount = result.Data.Pages;
             }
-            if (Products.Count == 0) Message = "No products found.";
+            if (Products.Count == 0) Message = "Không tìm thấy sản phẩm nào.";
             ProductsChanged?.Invoke();
         }
 

@@ -32,7 +32,7 @@
                 return new ServiceResponse<List<ProductType>>
                 {
                     Success = false,
-                    Message = "Product Type not found."
+                    Message = "Không tìm thấy dung tích."
                 };
             }
 

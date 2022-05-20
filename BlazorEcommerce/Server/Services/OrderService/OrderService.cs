@@ -32,7 +32,7 @@ namespace BlazorEcommerce.Server.Services.OrderService
             if (order == null)
             {
                 response.Success = false;
-                response.Message = "Order not found.";
+                response.Message = "Không tìm thấy đơn hàng.";
                 return response;
             }
 
@@ -75,8 +75,8 @@ namespace BlazorEcommerce.Server.Services.OrderService
                 OrderDate = o.OrderDate,
                 TotalPrice = o.TotalPrice,
                 Product = o.OrderItems.Count > 1 ?
-                    $"{o.OrderItems.First().Product.Title} and" +
-                    $" {o.OrderItems.Count - 1} more..." :
+                    $"{o.OrderItems.First().Product.Title} và" +
+                    $" {o.OrderItems.Count - 1} thêm..." :
                     o.OrderItems.First().Product.Title,
                 ProductImageUrl = o.OrderItems.First().Product.ImageUrl
             }));

@@ -6,9 +6,9 @@
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject ICartService CartService
 
-<PageTitle>Login</PageTitle>
+<PageTitle>Đăng nhập</PageTitle>
 
-<h3>Login</h3>
+<h3>ĐĂNG NHẬP</h3>
 
 <EditForm Model="user" OnValidSubmit="HandleLogin">
     <DataAnnotationsValidator />
@@ -18,11 +18,11 @@
         <ValidationMessage For="@(() => user.Email)" />
     </div>
     <div class="mb-3">
-        <label for="password">Password</label>
+        <label for="password">Mật khẩu</label>
         <InputText id="password" @bind-Value="user.Password" class="form-control" type="password" />
         <ValidationMessage For="@(() => user.Password)" />
     </div>
-    <button type="submit" class="btn btn-primary">Login</button>
+    <button type="submit" class="btn btn-primary">Đăng nhập</button>
 </EditForm>
 <div class="text-danger">
     <span>@errorMessage</span>

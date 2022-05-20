@@ -31,7 +31,7 @@
                 {
                     Success = false,
                     Data = false,
-                    Message = "Product not found."
+                    Message = "Không tìm thấy sản phẩm."
                 };
             }
 
@@ -95,7 +95,7 @@
             if (product == null)
             {
                 response.Success = false;
-                response.Message = "Sorry, but this product does not exist.";
+                response.Message = "Xin lỗi, sản phẩm này không tồn tại.";
             }
             else
             {
@@ -206,7 +206,7 @@
                 return new ServiceResponse<Product>
                 {
                     Success = false,
-                    Message = "Product not found."
+                    Message = "Không tìm thấy sản phẩm."
                 };
             }
 

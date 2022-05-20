@@ -25,7 +25,7 @@
                 return new ServiceResponse<List<Category>>
                 {
                     Success = false,
-                    Message = "Category not found."
+                    Message = "Không tìm thấy thương hiệu."
                 };
             }
 
@@ -70,7 +70,7 @@
                 return new ServiceResponse<List<Category>>
                 {
                     Success = false,
-                    Message = "Category not found."
+                    Message = "Không tìm thấy thương hiệu."
                 };
             }
 

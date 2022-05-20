@@ -4,9 +4,9 @@
 @inject IAuthService AuthService
 @inject NavigationManager NavigationManager
 
-<PageTitle>Shopping Cart</PageTitle>
+<PageTitle>Giỏ hàng</PageTitle>
 
-<h3>Shopping Cart</h3>
+<h3>GIỎ HÀNG</h3>
 
 @if (cartProducts == null || cartProducts.Count == 0)
 {
@@ -30,20 +30,20 @@ else
                    min="1" />
                     <button class="btn-delete" @onclick="@(() =>
                         RemoveProductFromCart(product.ProductId, product.ProductTypeId))">
-                        Delete
+                        Xoá
                     </button>
                 </div>
                 <div class="cart-product-price">$@(product.Price * product.Quantity)</div>
             </div>
         }
         <div class="cart-product-price">
-            Total (@cartProducts.Count): $@cartProducts.Sum(product => @product.Price * product.Quantity)
+            Tổng cộng (@cartProducts.Count): $@cartProducts.Sum(product => @product.Price * product.Quantity)
         </div>
     </div>
     @if (isAuthenticated)
     {
         <div>
-            <h5>Delivery Address</h5>
+            <h5>Địa chỉ giao hàng</h5>
             <AddressForm />
         </div>
     }
@@ -54,7 +54,7 @@ else
 
 @code {
     List<CartProductResponse> cartProducts = null;
-    string message = "Loading cart...";
+    string message = "Đang tải giỏ hàng...";
     bool isAuthenticated = false;
 
     protected override async Task OnInitializedAsync()
@@ -75,7 +75,7 @@ else
         cartProducts = await CartService.GetCartProducts();
         if (cartProducts == null || cartProducts.Count == 0)
         {
-            message = "Your cart is empty.";
+            message = "Không có sản phẩm nào trong giỏ hàng.";
         }
     }
 

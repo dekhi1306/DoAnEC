@@ -3,11 +3,11 @@
 
 @if (order == null)
 {
-    <span>Loading order...</span>
+    <span>Đang tải đơn hàng...</span>
 }
 else
 {
-    <h3>Order from @order.OrderDate</h3>
+    <h3>Đã đặt vào @order.OrderDate</h3>
 
     <div>
         @foreach (var product in order.Products)
@@ -19,7 +19,7 @@ else
                 <div class="name">
                     <h5><a href="/product/@product.ProductId">@product.Title</a></h5>
                     <span>@product.ProductType</span><br />
-                    <span>Quantity: @product.Quantity</span>
+                    <span>Số lượng: @product.Quantity</span>
                 </div>
                 <div class="product-price">$@product.TotalPrice</div>
             </div>
