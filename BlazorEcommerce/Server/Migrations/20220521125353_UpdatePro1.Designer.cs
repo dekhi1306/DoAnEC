@@ -4,6 +4,7 @@ using BlazorEcommerce.Server.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorEcommerce.Server.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20220521125353_UpdatePro1")]
+    partial class UpdatePro1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -486,7 +488,7 @@ namespace BlazorEcommerce.Server.Migrations
                             Deleted = false,
                             Description = "Với thiết kế đầy mạnh mẽ và nam tính, Gucci Guilty Pour Homme đã phần nào toát lên nét đẹp vững chãi, lãng du của mình chỉ qua một cái nhìn. Tông hương đầu của Oải hương cùng Chanh từ tốn mở ra làn gió thoáng mát, sảng khoái cho mùa hè với hương thơm thanh thoát điển hình. Nhanh chóng nhường chỗ cho Hoa cam, Guilty ở tầng hương tiếp theo bộc lộ ngày càng rõ ràng mùi vị nồng nàn đầy lôi cuốn, để rồi kết thúc trong sự hòa quyện của Hoắc hương, Tuyết tùng và Vanilla the mát, ngọt dịu. Phóng đãng, tươi mới đầy tài tình, Gucci Guilty Pour Homme như viên nam châm, thu hút tất cả sự chú ý xung quanh về phía mình.",
                             Featured = false,
-                            ImageUrl = "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1611335703/628572_99999_0099_001_100_0000_Light-Gucci-Bloom-Profumo-di-Fiori-100ml-Eau-de-Parfum.jpg",
+                            ImageUrl = "https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1582739103/613748_99999_0099_001_100_0000_Light-Gucci-Guilty-Pour-Homme-90ml-eau-de-parfum.jpg",
                             Title = "Gucci Bloom Profumo di Fiori",
                             Visible = true
                         },
@@ -498,7 +500,7 @@ namespace BlazorEcommerce.Server.Migrations
                             Deleted = false,
                             Description = "Sauvage Elixir là một hương thơm cô đặc đặc biệt * ngập tràn trong sự tươi mát mang tính biểu tượng của Sauvage với trái tim say đắm của Gia vị, tinh chất Oải hương được thiết kế riêng và sự pha trộn của các loại Gỗ phong phú tạo nên dấu ấn đặc trưng của đường mòn mạnh mẽ, xa hoa và quyến rũ.",
                             Featured = false,
-                            ImageUrl = "https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw71015f31/assets/Y0998004/Y0998004_C099600455_E01_ZHC.jpg?sw=870&sh=580&sm=fit&imwidth=870",
+                            ImageUrl = "https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw59f3c992/assets/Y0996460/Y0996460_C099600755_E01_ZHC.jpg?sw=870&sh=580&sm=fit&imwidth=870",
                             Title = "Sauvage",
                             Visible = true
                         },
@@ -618,7 +620,7 @@ namespace BlazorEcommerce.Server.Migrations
                             Deleted = false,
                             Description = "Louis Vuitton Météore thuộc chai nước hoa thứ 6 của bộ sưu tập nước hoa xa xỉ Louis Vuitton, đến từ bàn tay của bậc thầy mùi hương Jacques Cavallier Belletrud. Météore. Cái tên đầy cuốn hút với sức mạnh tỏa ra từ ánh sáng, khơi dậy niềm đam mê cho những chuyến đi không bao giờ dứt, giống như những đám mây rực rỡ khiến cho bầu trời bỗng nhiên bốc cháy và làm lóa hết mọi ánh nhìn.",
                             Featured = false,
-                            ImageUrl = "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-m%C3%A9t%C3%A9ore-fragrances--LP0160_PM2_Front%20view.png?wid=1240&hei=1240",
+                            ImageUrl = "https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-m%C3%A9t%C3%A9ore-fragrances--LP0160_PM1_Interior%20view.png?wid=1080",
                             Title = "Météore",
                             Visible = true
                         },
@@ -630,7 +632,7 @@ namespace BlazorEcommerce.Server.Migrations
                             Deleted = false,
                             Description = "Một trong những mẫu nước hoa của Louis Vuitton đang được săn lùng nhiều nhất trên thị trường đó chính là nước hoa L’IMMENSITÉ PERFUME. Mẫu nước hoa này nổi bật với hương thơm sang trọng, vị cay trầm ấm và kiểu dáng nhỏ gọn, cuốn hút.",
                             Featured = false,
-                            ImageUrl = "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-l-immensit%C3%A9-fragrances--LP0052_PM2_Front%20view.png?wid=1240&hei=1240",
+                            ImageUrl = "https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-l-immensit%C3%A9-fragrances--LP0052_PM1_Interior%20view.png?wid=1080",
                             Title = "L’immensité",
                             Visible = true
                         },
@@ -642,7 +644,7 @@ namespace BlazorEcommerce.Server.Migrations
                             Deleted = false,
                             Description = "Nước hoa Louis Vuitton Orage mang mùi hương thanh lịch, trang nhã, độ toả hương cực xa. Orage Louis Vuitton là sự hoà trộn hoàn hảo của Chanh, Hoa Iris, Patchouli và tinh dầu Vetiver Java gồm 3 hương đầu, giữa và cuối cho một ngày dài năng động với hương thơm suốt ngày dài.",
                             Featured = false,
-                            ImageUrl = "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-orage-fragrances--LP0051_PM2_Front%20view.png?wid=1240&hei=1240",
+                            ImageUrl = "https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-orage-fragrances--LP0051_PM1_Interior%20view.png?wid=1080",
                             Title = "Orage",
                             Visible = true
                         },
@@ -654,7 +656,7 @@ namespace BlazorEcommerce.Server.Migrations
                             Deleted = false,
                             Description = "Nước hoa NOUVEAU MONDE thuộc nhóm hương phương Đông nên mang đến phong cách nam tính, mạnh mẽ, phiêu lưu và cực kỳ lôi cuốn. Một chút nồng ấm của trầm hương hòa quyện với sự bay bổng của da thuộc giúp phái mạnh tận hưởng trọn vẹn mùi hương đẳng cấp nhất.",
                             Featured = false,
-                            ImageUrl = "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-nouveau-monde-fragrances--LP0053_PM2_Front%20view.png?wid=1240&hei=1240",
+                            ImageUrl = "https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-nouveau-monde-fragrances--LP0053_PM1_Interior%20view.png?wid=1080",
                             Title = "Nouveau Monde",
                             Visible = true
                         },
