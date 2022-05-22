@@ -30,30 +30,30 @@
                 );
 
             modelBuilder.Entity<Category>().HasData(
-                new Category
-                {
-                    Id = 1,
-                    Name = "Chanel",
-                    Url = "chanel"
-                },
-                new Category
-                {
-                    Id = 2,
-                    Name = "Gucci",
-                    Url = "gucci"
-                },
-                new Category
-                {
-                    Id = 3,
-                    Name = "Dior",
-                    Url = "dior"
-                },
-                new Category
-                {
-                    Id = 4,
-                    Name = "LouisVuitton",
-                    Url = "louisvuitton"
-                }
+                    new Category
+                    {
+                        Id = 1,
+                        Name = "Chanel",
+                        Url = "chanel"
+                    },
+                    new Category
+                    {
+                        Id = 2,
+                        Name = "Gucci",
+                        Url = "gucci"
+                    },
+                    new Category
+                    {
+                        Id = 3,
+                        Name = "Dior",
+                        Url = "dior"
+                    },
+                    new Category
+                    {
+                        Id = 4,
+                        Name = "LouisVuitton",
+                        Url = "louisvuitton"
+                    }
                 );
 
             modelBuilder.Entity<Product>().HasData(
@@ -110,6 +110,15 @@
                         ImageUrl = "https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_320/allure-homme-edition-blanche-eau-de-parfum-spray-3-4fl-oz--packshot-default-127460-8848377118750.jpg",
                         CategoryId = 1,
                         Concenstration = "Eau De Parfum"
+                    },
+                    new Product
+                    {
+                        Id = 7,
+                        Title = "Égoïste",
+                        Description = "Độc lập và khó nắm bắt. Hoàn toàn hấp dẫn. Một hương thơm đậm, giàu hương gỗ dành cho người đàn ông có sức mạnh quyến rũ nằm trong tính cách mạnh mẽ của anh ta. Trong một chai nam tính với các đường nét sạch sẽ.",
+                        ImageUrl = "https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_320/egoiste-eau-de-toilette-spray-3-4fl-oz--packshot-default-114460-8848376823838.jpg",
+                        CategoryId = 1,
+                        Concenstration = "Eau De Toilette"
                     },
                     new Product
                     {
@@ -411,116 +420,446 @@
                     );
 
             modelBuilder.Entity<ProductVariant>().HasData(
-                new ProductVariant
-                {
-                    ProductId = 1,
-                    ProductTypeId = 2,
-                    Price = 9.99m,
-                    OriginalPrice = 19.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 1,
-                    ProductTypeId = 3,
-                    Price = 7.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 1,
-                    ProductTypeId = 4,
-                    Price = 19.99m,
-                    OriginalPrice = 29.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 2,
-                    ProductTypeId = 2,
-                    Price = 7.99m,
-                    OriginalPrice = 14.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 3,
-                    ProductTypeId = 2,
-                    Price = 6.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 4,
-                    ProductTypeId = 5,
-                    Price = 3.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 4,
-                    ProductTypeId = 6,
-                    Price = 9.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 4,
-                    ProductTypeId = 7,
-                    Price = 19.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 5,
-                    ProductTypeId = 5,
-                    Price = 3.99m,
-                },
-                new ProductVariant
-                {
-                    ProductId = 6,
-                    ProductTypeId = 5,
-                    Price = 2.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 7,
-                    ProductTypeId = 8,
-                    Price = 19.99m,
-                    OriginalPrice = 29.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 7,
-                    ProductTypeId = 9,
-                    Price = 69.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 7,
-                    ProductTypeId = 10,
-                    Price = 49.99m,
-                    OriginalPrice = 59.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 8,
-                    ProductTypeId = 8,
-                    Price = 9.99m,
-                    OriginalPrice = 24.99m,
-                },
-                new ProductVariant
-                {
-                    ProductId = 9,
-                    ProductTypeId = 8,
-                    Price = 14.99m
-                },
-                new ProductVariant
-                {
-                    ProductId = 10,
-                    ProductTypeId = 1,
-                    Price = 159.99m,
-                    OriginalPrice = 299m
-                },
-                new ProductVariant
-                {
-                    ProductId = 11,
-                    ProductTypeId = 1,
-                    Price = 79.99m,
-                    OriginalPrice = 399m
-                }
+                    new ProductVariant
+                    {
+                        ProductId = 1,
+                        ProductTypeId = 2,
+                        Price = 2030000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 1,
+                        ProductTypeId = 6,
+                        Price = 3100000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 1,
+                        ProductTypeId = 7,
+                        Price = 4900000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 2,
+                        ProductTypeId = 6,
+                        Price = 1940000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 3,
+                        ProductTypeId = 1,
+                        Price = 1800000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 3,
+                        ProductTypeId = 2,
+                        Price = 2600000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 3,
+                        ProductTypeId = 6,
+                        Price = 2100000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 3,
+                        ProductTypeId = 7,
+                        Price = 5500000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 4,
+                        ProductTypeId = 2,
+                        Price = 2700000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 4,
+                        ProductTypeId = 6,
+                        Price = 3400000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 5,
+                        ProductTypeId = 2,
+                        Price = 1900000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 5,
+                        ProductTypeId = 6,
+                        Price = 2940000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 6,
+                        ProductTypeId = 2,
+                        Price = 2400000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 6,
+                        ProductTypeId = 6,
+                        Price = 3105000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 7,
+                        ProductTypeId = 6,
+                        Price = 2580000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 8,
+                        ProductTypeId = 6,
+                        Price = 2790000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 9,
+                        ProductTypeId = 6,
+                        Price = 2580000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 10,
+                        ProductTypeId = 1,
+                        Price = 2080000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 10,
+                        ProductTypeId = 2,
+                        Price = 2600000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 10,
+                        ProductTypeId = 6,
+                        Price = 2700000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 10,
+                        ProductTypeId = 8,
+                        Price = 5200000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 11,
+                        ProductTypeId = 6,
+                        Price = 2400000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 12,
+                        ProductTypeId = 6,
+                        Price = 7400000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 13,
+                        ProductTypeId = 6,
+                        Price = 7400000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 14,
+                        ProductTypeId = 6,
+                        Price = 7400000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 15,
+                        ProductTypeId = 6,
+                        Price = 7400000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 16,
+                        ProductTypeId = 6,
+                        Price = 6800000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 17,
+                        ProductTypeId = 6,
+                        Price = 5600000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 18,
+                        ProductTypeId = 6,
+                        Price = 8400000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 19,
+                        ProductTypeId = 2,
+                        Price = 2800000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 19,
+                        ProductTypeId = 5,
+                        Price = 3400000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 20,
+                        ProductTypeId = 6,
+                        Price = 2600000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 21,
+                        ProductTypeId = 3,
+                        Price = 2990000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 21,
+                        ProductTypeId = 6,
+                        Price = 3200000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 22,
+                        ProductTypeId = 2,
+                        Price = 1990000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 22,
+                        ProductTypeId = 6,
+                        Price = 2600000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 22,
+                        ProductTypeId = 7,
+                        Price = 3600000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 23,
+                        ProductTypeId = 4,
+                        Price = 1700000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 23,
+                        ProductTypeId = 6,
+                        Price = 2500000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 24,
+                        ProductTypeId = 2,
+                        Price = 1900000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 24,
+                        ProductTypeId = 6,
+                        Price = 2600000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 24,
+                        ProductTypeId = 7,
+                        Price = 2990000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 25,
+                        ProductTypeId = 2,
+                        Price = 2100000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 25,
+                        ProductTypeId = 6,
+                        Price = 2280000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 26,
+                        ProductTypeId = 2,
+                        Price = 1880000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 26,
+                        ProductTypeId = 6,
+                        Price = 2880000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 27,
+                        ProductTypeId = 2,
+                        Price = 2000000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 27,
+                        ProductTypeId = 6,
+                        Price = 2500000,
+                    },
+
+                    new ProductVariant
+                    {
+                        ProductId = 28,
+                        ProductTypeId = 6,
+                        Price = 2280000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 29,
+                        ProductTypeId = 1,
+                        Price = 1500000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 29,
+                        ProductTypeId = 2,
+                        Price = 2100000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 29,
+                        ProductTypeId = 6,
+                        Price = 3360000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 30,
+                        ProductTypeId = 6,
+                        Price = 2100000,
+                    },
+
+                    new ProductVariant
+                    {
+                        ProductId = 31,
+                        ProductTypeId = 6,
+                        Price = 5300000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 31,
+                        ProductTypeId = 8,
+                        Price = 9800000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 32,
+                        ProductTypeId = 6,
+                        Price = 5300000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 32,
+                        ProductTypeId = 8,
+                        Price = 7500000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 33,
+                        ProductTypeId = 6,
+                        Price = 5300000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 33,
+                        ProductTypeId = 8,
+                        Price = 13800000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 34,
+                        ProductTypeId = 6,
+                        Price = 5300000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 34,
+                        ProductTypeId = 8,
+                        Price = 12000000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 35,
+                        ProductTypeId = 6,
+                        Price = 4500000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 35,
+                        ProductTypeId = 8,
+                        Price = 7990000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 36,
+                        ProductTypeId = 6,
+                        Price = 4300000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 36,
+                        ProductTypeId = 8,
+                        Price = 8800000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 37,
+                        ProductTypeId = 6,
+                        Price = 5300000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 37,
+                        ProductTypeId = 8,
+                        Price = 11500000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 38,
+                        ProductTypeId = 6,
+                        Price = 4800000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 38,
+                        ProductTypeId = 8,
+                        Price = 7500000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 39,
+                        ProductTypeId = 6,
+                        Price = 7200000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 39,
+                        ProductTypeId = 8,
+                        Price = 11500000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 40,
+                        ProductTypeId = 6,
+                        Price = 7200000,
+                    },
+                    new ProductVariant
+                    {
+                        ProductId = 40,
+                        ProductTypeId = 8,
+                        Price = 1200000,
+                    }
             );
         }
 

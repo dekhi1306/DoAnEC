@@ -336,6 +336,18 @@ namespace BlazorEcommerce.Server.Migrations
                         },
                         new
                         {
+                            Id = 7,
+                            CategoryId = 1,
+                            Concenstration = "Eau De Toilette",
+                            Deleted = false,
+                            Description = "Độc lập và khó nắm bắt. Hoàn toàn hấp dẫn. Một hương thơm đậm, giàu hương gỗ dành cho người đàn ông có sức mạnh quyến rũ nằm trong tính cách mạnh mẽ của anh ta. Trong một chai nam tính với các đường nét sạch sẽ.",
+                            Featured = false,
+                            ImageUrl = "https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_320/egoiste-eau-de-toilette-spray-3-4fl-oz--packshot-default-114460-8848376823838.jpg",
+                            Title = "Égoïste",
+                            Visible = true
+                        },
+                        new
+                        {
                             Id = 8,
                             CategoryId = 1,
                             Concenstration = "Eau De Toilette",
@@ -823,35 +835,44 @@ namespace BlazorEcommerce.Server.Migrations
                             ProductId = 1,
                             ProductTypeId = 2,
                             Deleted = false,
-                            OriginalPrice = 19.99m,
-                            Price = 9.99m,
+                            OriginalPrice = 0m,
+                            Price = 2030000m,
                             Visible = true
                         },
                         new
                         {
                             ProductId = 1,
-                            ProductTypeId = 3,
+                            ProductTypeId = 6,
                             Deleted = false,
                             OriginalPrice = 0m,
-                            Price = 7.99m,
+                            Price = 3100000m,
                             Visible = true
                         },
                         new
                         {
                             ProductId = 1,
-                            ProductTypeId = 4,
+                            ProductTypeId = 7,
                             Deleted = false,
-                            OriginalPrice = 29.99m,
-                            Price = 19.99m,
+                            OriginalPrice = 0m,
+                            Price = 4900000m,
                             Visible = true
                         },
                         new
                         {
                             ProductId = 2,
-                            ProductTypeId = 2,
+                            ProductTypeId = 6,
                             Deleted = false,
-                            OriginalPrice = 14.99m,
-                            Price = 7.99m,
+                            OriginalPrice = 0m,
+                            Price = 1940000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            ProductTypeId = 1,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 1800000m,
                             Visible = true
                         },
                         new
@@ -860,16 +881,34 @@ namespace BlazorEcommerce.Server.Migrations
                             ProductTypeId = 2,
                             Deleted = false,
                             OriginalPrice = 0m,
-                            Price = 6.99m,
+                            Price = 2600000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2100000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            ProductTypeId = 7,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 5500000m,
                             Visible = true
                         },
                         new
                         {
                             ProductId = 4,
-                            ProductTypeId = 5,
+                            ProductTypeId = 2,
                             Deleted = false,
                             OriginalPrice = 0m,
-                            Price = 3.99m,
+                            Price = 2700000m,
                             Visible = true
                         },
                         new
@@ -878,79 +917,70 @@ namespace BlazorEcommerce.Server.Migrations
                             ProductTypeId = 6,
                             Deleted = false,
                             OriginalPrice = 0m,
-                            Price = 9.99m,
-                            Visible = true
-                        },
-                        new
-                        {
-                            ProductId = 4,
-                            ProductTypeId = 7,
-                            Deleted = false,
-                            OriginalPrice = 0m,
-                            Price = 19.99m,
+                            Price = 3400000m,
                             Visible = true
                         },
                         new
                         {
                             ProductId = 5,
-                            ProductTypeId = 5,
+                            ProductTypeId = 2,
                             Deleted = false,
                             OriginalPrice = 0m,
-                            Price = 3.99m,
+                            Price = 1900000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 5,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2940000m,
                             Visible = true
                         },
                         new
                         {
                             ProductId = 6,
-                            ProductTypeId = 5,
+                            ProductTypeId = 2,
                             Deleted = false,
                             OriginalPrice = 0m,
-                            Price = 2.99m,
+                            Price = 2400000m,
                             Visible = true
                         },
                         new
                         {
-                            ProductId = 7,
-                            ProductTypeId = 8,
-                            Deleted = false,
-                            OriginalPrice = 29.99m,
-                            Price = 19.99m,
-                            Visible = true
-                        },
-                        new
-                        {
-                            ProductId = 7,
-                            ProductTypeId = 9,
+                            ProductId = 6,
+                            ProductTypeId = 6,
                             Deleted = false,
                             OriginalPrice = 0m,
-                            Price = 69.99m,
+                            Price = 3105000m,
                             Visible = true
                         },
                         new
                         {
                             ProductId = 7,
-                            ProductTypeId = 10,
+                            ProductTypeId = 6,
                             Deleted = false,
-                            OriginalPrice = 59.99m,
-                            Price = 49.99m,
+                            OriginalPrice = 0m,
+                            Price = 2580000m,
                             Visible = true
                         },
                         new
                         {
                             ProductId = 8,
-                            ProductTypeId = 8,
+                            ProductTypeId = 6,
                             Deleted = false,
-                            OriginalPrice = 24.99m,
-                            Price = 9.99m,
+                            OriginalPrice = 0m,
+                            Price = 2790000m,
                             Visible = true
                         },
                         new
                         {
                             ProductId = 9,
-                            ProductTypeId = 8,
+                            ProductTypeId = 6,
                             Deleted = false,
                             OriginalPrice = 0m,
-                            Price = 14.99m,
+                            Price = 2580000m,
                             Visible = true
                         },
                         new
@@ -958,17 +988,503 @@ namespace BlazorEcommerce.Server.Migrations
                             ProductId = 10,
                             ProductTypeId = 1,
                             Deleted = false,
-                            OriginalPrice = 299m,
-                            Price = 159.99m,
+                            OriginalPrice = 0m,
+                            Price = 2080000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 10,
+                            ProductTypeId = 2,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2600000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 10,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2700000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 10,
+                            ProductTypeId = 8,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 5200000m,
                             Visible = true
                         },
                         new
                         {
                             ProductId = 11,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2400000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 12,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 7400000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 13,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 7400000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 14,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 7400000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 15,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 7400000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 16,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 6800000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 17,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 5600000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 18,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 8400000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 19,
+                            ProductTypeId = 2,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2800000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 19,
+                            ProductTypeId = 5,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 3400000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 20,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2600000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 21,
+                            ProductTypeId = 3,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2990000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 21,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 3200000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 22,
+                            ProductTypeId = 2,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 1990000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 22,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2600000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 22,
+                            ProductTypeId = 7,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 3600000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 23,
+                            ProductTypeId = 4,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 1700000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 23,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2500000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 24,
+                            ProductTypeId = 2,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 1900000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 24,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2600000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 24,
+                            ProductTypeId = 7,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2990000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 25,
+                            ProductTypeId = 2,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2100000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 25,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2280000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 26,
+                            ProductTypeId = 2,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 1880000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 26,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2880000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 27,
+                            ProductTypeId = 2,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2000000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 27,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2500000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 28,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2280000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 29,
                             ProductTypeId = 1,
                             Deleted = false,
-                            OriginalPrice = 399m,
-                            Price = 79.99m,
+                            OriginalPrice = 0m,
+                            Price = 1500000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 29,
+                            ProductTypeId = 2,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2100000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 29,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 3360000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 30,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 2100000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 31,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 5300000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 31,
+                            ProductTypeId = 8,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 9800000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 32,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 5300000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 32,
+                            ProductTypeId = 8,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 7500000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 33,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 5300000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 33,
+                            ProductTypeId = 8,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 13800000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 34,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 5300000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 34,
+                            ProductTypeId = 8,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 12000000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 35,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 4500000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 35,
+                            ProductTypeId = 8,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 7990000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 36,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 4300000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 36,
+                            ProductTypeId = 8,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 8800000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 37,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 5300000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 37,
+                            ProductTypeId = 8,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 11500000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 38,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 4800000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 38,
+                            ProductTypeId = 8,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 7500000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 39,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 7200000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 39,
+                            ProductTypeId = 8,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 11500000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 40,
+                            ProductTypeId = 6,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 7200000m,
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 40,
+                            ProductTypeId = 8,
+                            Deleted = false,
+                            OriginalPrice = 0m,
+                            Price = 1200000m,
                             Visible = true
                         });
                 });
