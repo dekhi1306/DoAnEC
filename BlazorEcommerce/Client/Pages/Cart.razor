@@ -2,6 +2,7 @@
 @inject ICartService CartService
 @inject IOrderService OrderService
 @inject IAuthService AuthService
+@inject IProductService ProductService
 @inject NavigationManager NavigationManager
 
 <PageTitle>Giỏ hàng</PageTitle>
@@ -33,11 +34,11 @@ else
                         Xoá
                     </button>
                 </div>
-                <div class="cart-product-price">$@(product.Price * product.Quantity)</div>
+                <div class="cart-product-price">@ProductService.FormatPrice(product.Price * product.Quantity)</div>
             </div>
         }
         <div class="cart-product-price">
-            Tổng cộng (@cartProducts.Count): $@cartProducts.Sum(product => @product.Price * product.Quantity)
+            Tổng cộng (@cartProducts.Count): @ProductService.FormatPrice(cartProducts.Sum(product => @product.Price * product.Quantity))
         </div>
     </div>
     @if (isAuthenticated)

@@ -1,4 +1,6 @@
-﻿namespace BlazorEcommerce.Client.Services.ProductService
+﻿using System.Globalization;
+
+namespace BlazorEcommerce.Client.Services.ProductService
 {
     public class ProductService : IProductService
     {
@@ -92,6 +94,17 @@
             var result = await _http.PutAsJsonAsync($"api/product", product);
             var content = await result.Content.ReadFromJsonAsync<ServiceResponse<Product>>();
             return content.Data;
+        }
+
+        public string FormatPrice(decimal price)
+        {    
+            string VietFormat = price.ToString("C", CultureInfo.CreateSpecificCulture("vi-VN"));
+            string[] tmp;
+            string res = "";
+
+            tmp = VietFormat.Split('D');
+            res = tmp[1] + " VNĐ";
+            return res;
         }
     }
 }
