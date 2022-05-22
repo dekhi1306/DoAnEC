@@ -19,16 +19,14 @@
                 .HasKey(oi => new { oi.OrderId, oi.ProductId, oi.ProductTypeId });
 
             modelBuilder.Entity<ProductType>().HasData(
-                    new ProductType { Id = 1, Name = "Default" },
-                    new ProductType { Id = 2, Name = "Paperback" },
-                    new ProductType { Id = 3, Name = "E-Book" },
-                    new ProductType { Id = 4, Name = "Audiobook" },
-                    new ProductType { Id = 5, Name = "Stream" },
-                    new ProductType { Id = 6, Name = "Blu-ray" },
-                    new ProductType { Id = 7, Name = "VHS" },
-                    new ProductType { Id = 8, Name = "PC" },
-                    new ProductType { Id = 9, Name = "PlayStation" },
-                    new ProductType { Id = 10, Name = "Xbox" }
+                    new ProductType { Id = 1, Name = "35 ml" },
+                    new ProductType { Id = 2, Name = "50 ml" },
+                    new ProductType { Id = 3, Name = "60 ml" },
+                    new ProductType { Id = 4, Name = "75 ml" },
+                    new ProductType { Id = 5, Name = "90 ml" },
+                    new ProductType { Id = 6, Name = "100 ml" },
+                    new ProductType { Id = 7, Name = "150 ml" },
+                    new ProductType { Id = 8, Name = "200 ml" }
                 );
 
             modelBuilder.Entity<Category>().HasData(
