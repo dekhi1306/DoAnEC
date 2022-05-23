@@ -33,9 +33,8 @@ namespace BlazorEcommerce.Client.Services.OrderService
         {
             if (await IsUserAuthenticated())
             {
-                var result = await _http.PostAsync("api/payment/checkout", null);
-                var url = await result.Content.ReadAsStringAsync();
-                return url;
+                var result = await _http.PostAsync("api/order", null);
+                return "https://localhost:7226/order-success";
             }
             else
             {

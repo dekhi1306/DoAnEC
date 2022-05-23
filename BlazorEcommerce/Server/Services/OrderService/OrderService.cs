@@ -86,8 +86,9 @@ namespace BlazorEcommerce.Server.Services.OrderService
             return response;
         }
 
-        public async Task<ServiceResponse<bool>> PlaceOrder(int userId)
+        public async Task<ServiceResponse<bool>> Order()
         {
+            var userId = _authService.GetUserId();
             var products = (await _cartService.GetDbCartProducts(userId)).Data;
             decimal totalPrice = 0;
             products.ForEach(product => totalPrice += product.Price * product.Quantity);
