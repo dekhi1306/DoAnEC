@@ -1,4 +1,5 @@
 ﻿@page "/orders"
+@inject IProductService ProductService
 @inject IOrderService OrderService
 
 <h3>ĐƠN HÀNG</h3>
@@ -24,7 +25,7 @@ else
                 <span>@order.OrderDate</span><br />
                 <a href="orders/@order.Id">Xem thêm...</a>
             </div>
-            <div class="order-price">$@order.TotalPrice</div>
+            <div class="order-price">@ProductService.FormatPrice(order.TotalPrice)</div>
         </div>
     }
 }

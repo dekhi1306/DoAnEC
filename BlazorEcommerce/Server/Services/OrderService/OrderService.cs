@@ -76,7 +76,7 @@ namespace BlazorEcommerce.Server.Services.OrderService
                 TotalPrice = o.TotalPrice,
                 Product = o.OrderItems.Count > 1 ?
                     $"{o.OrderItems.First().Product.Title} và" +
-                    $" {o.OrderItems.Count - 1} thêm..." :
+                    $" {o.OrderItems.Count - 1}..." :
                     o.OrderItems.First().Product.Title,
                 ProductImageUrl = o.OrderItems.First().Product.ImageUrl
             }));

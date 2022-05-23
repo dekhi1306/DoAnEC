@@ -1,5 +1,6 @@
 ﻿@page "/orders/{orderId:int}"
 @inject IOrderService OrderService
+@inject IProductService ProductService
 
 @if (order == null)
 {
@@ -21,11 +22,11 @@ else
                     <span>@product.ProductType</span><br />
                     <span>Số lượng: @product.Quantity</span>
                 </div>
-                <div class="product-price">$@product.TotalPrice</div>
+                <div class="product-price">@ProductService.FormatPrice(product.TotalPrice)</div>
             </div>
         }
         <div class="product-price">
-            Total: $@order.TotalPrice
+            Tổng cộng: @ProductService.FormatPrice(order.TotalPrice)
         </div>
     </div>
 }
