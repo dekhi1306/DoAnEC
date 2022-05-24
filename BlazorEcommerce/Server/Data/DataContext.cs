@@ -64,7 +64,8 @@
                         Description = "BLEU DE CHANEL khẳng định bản lĩnh hoàn hảo thông qua một mùi hương bất ngờ và vượt thời gian. Hương thơm hương gỗ tỏa ra thành một đường mòn quyến rũ, thể hiện sự độc lập với sức mạnh và sự sang trọng, giống như người đàn ông mang nó.",
                         ImageUrl = "https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/bleu-de-chanel-eau-de-parfum-spray-3-4fl-oz--packshot-default-107360-8848377380894.jpg",
                         CategoryId = 1,
-                        Concenstration = "Eau De Parfum"
+                        Concenstration = "Eau De Parfum",
+                        Featured = true
                     },
                     new Product
                     {
@@ -100,7 +101,8 @@
                         Description = "Như bức chân dung của một quý ông có tính cách hướng ngoại, cá tính và khiêu khích. Phiên bản Eau de Toilette mang nốt hương xanh fougère-vert. Một mùi hương tràn đầy năng lượng với những nốt hương tươi mát.",
                         ImageUrl = "https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/platinum-egoiste-eau-de-toilette-spray-1-7fl-oz--packshot-default-124450-8848319512606.jpg",
                         CategoryId = 1,
-                        Concenstration = "Eau De Toilette"
+                        Concenstration = "Eau De Toilette",
+                        Featured = true
                     },
                     new Product
                     {
@@ -361,7 +363,8 @@
                         Description = "Nước hoa NOUVEAU MONDE thuộc nhóm hương phương Đông nên mang đến phong cách nam tính, mạnh mẽ, phiêu lưu và cực kỳ lôi cuốn. Một chút nồng ấm của trầm hương hòa quyện với sự bay bổng của da thuộc giúp phái mạnh tận hưởng trọn vẹn mùi hương đẳng cấp nhất.",
                         ImageUrl = "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-nouveau-monde-fragrances--LP0053_PM2_Front%20view.png?wid=1240&hei=1240",
                         CategoryId = 4,
-                        Concenstration = "Eau De Parfum"
+                        Concenstration = "Eau De Parfum",
+                        Featured = true
                     },
                     new Product
                     {
@@ -388,7 +391,8 @@
                         Description = "Heures D'Absence là dòng sản phẩm dành cho nữ được sáng tác bởi nhà Louis Vuitton, đây là loại nước hoa đánh dấu sự đổi mới và bùng nổ sáng tạo của Louis. Một hương thơm nắm bắt được dòng chảy của thời gian và tôn vinh thiết kế đơn giản, thanh lịch, đã tạo nên sức hút và chỗ đứng nhất định của nhà Louis trong lòng các thượng khách. Một nơi nghỉ ngơi tuyệt đẹp qua những cánh đồng hoa Grasse, đây chính là lời ca tụng của những bông hoa tươi, một hình tượng ngụ ngôn về niềm vui, tình yêu và sự thoát tục.",
                         ImageUrl = "https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-heures-d-absence-fragrances--LP0113_PM2_Front%20view.png?wid=2048&hei=2048",
                         CategoryId = 4,
-                        Concenstration = "Eau De Parfum"
+                        Concenstration = "Eau De Parfum",
+                        Featured = true
                     },
                     new Product
                     {
