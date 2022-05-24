@@ -23,13 +23,10 @@
             }
             else
             {
-                dbAddress.FirstName = address.FirstName;
-                dbAddress.LastName = address.LastName;
-                dbAddress.State = address.State;
-                dbAddress.Country = address.Country;
-                dbAddress.City = address.City;
-                dbAddress.Zip = address.Zip;
+                dbAddress.FullName = address.FullName;
                 dbAddress.Street = address.Street;
+                dbAddress.PhoneNumber = address.PhoneNumber;
+                dbAddress.Note = address.Note;
                 response.Data = dbAddress;
             }
 
