@@ -1,4 +1,10 @@
-﻿<footer class="footer-07">
+﻿@inject NavigationManager NavigationManager
+
+<div style="float: right; margin-right:50px; margin-bottom: 10px; margin-top:10px">
+	<button onclick="@OpenChatbox" type="button" class="btn btn-primary">Tư vấn</button>
+</div>
+
+<footer class="footer-07">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-12 text-center">
@@ -25,5 +31,12 @@
 		</div>
 	</div>
 </footer>
+
+@code {
+	private void OpenChatbox()
+	{
+		NavigationManager.NavigateTo("https://localhost:7226/chatbox");
+	}
+}
 
 
