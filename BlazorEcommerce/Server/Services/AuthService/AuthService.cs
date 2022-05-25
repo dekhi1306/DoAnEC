@@ -149,5 +149,14 @@ namespace BlazorEcommerce.Server.Services.AuthService
         {
             return await _context.Users.FirstOrDefaultAsync(u => u.Email.Equals(email));
         }
+
+        public async Task<User> GetUser()
+        {
+            var id = GetUserId();
+            User user = await _context.Users.FirstOrDefaultAsync(u => u.Id.Equals(id));
+            return user;
+        }
+
+        
     }
 }

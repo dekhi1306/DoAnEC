@@ -33,5 +33,11 @@
             var result = await _http.PostAsJsonAsync("api/auth/register", request);
             return await result.Content.ReadFromJsonAsync<ServiceResponse<int>>();
         }
+
+        public async Task<User> GetUser()
+        {
+            var result = await _http.PostAsync("api/auth/user", null);
+            return await result.Content.ReadFromJsonAsync<User>();
+        }
     }
 }

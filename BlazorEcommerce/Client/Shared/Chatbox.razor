@@ -1,12 +1,14 @@
 ﻿@page "/chatbox"
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
+@inject IAuthService AuthService
+@inject IAddressService AddressService
 @implements IAsyncDisposable
 
 <PageTitle>Tư vấn</PageTitle>
 <h3>TƯ VẤN BÁN HÀNG</h3>
 
-@if (!IsConnected)
+@if (!IsConnected && !isAuthenticated)
 {
     <div class="input-group">
         <input @bind="username" class="form-control" placeholder="Nhập tên của bạn...">
@@ -38,7 +40,31 @@ else
     private string messages = string.Empty;
     private string username = string.Empty;
     private string message = string.Empty;
+    bool isAuthenticated = false;
     ElementReference TextAreaRef;
+
+    protected override async Task OnInitializedAsync()
+    {
+        isAuthenticated = await AuthService.IsUserAuthenticated();
+        if(isAuthenticated)
+        {
+            User user = await AuthService.GetUser();
+            var role = user.Role;
+            if (role.Equals("Admin"))
+            {
+                username = "Admin";
+            }
+            else
+            {
+                Address address = await AddressService.GetAddress();
+                if (address.FullName == null || address.FullName.Equals(""))
+                    username = user.Email;
+                else
+                    username = address.FullName;
+            }
+            await Connect();
+        }
+    }
 
     private async Task Connect()
     {

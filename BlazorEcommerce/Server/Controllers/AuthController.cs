@@ -59,5 +59,12 @@ namespace BlazorEcommerce.Server.Controllers
 
             return Ok(response);
         }
+
+        [HttpPost("user"), Authorize]
+        public async Task<ActionResult<ServiceResponse<User>>> GetUser()
+        {
+            var response = await _authService.GetUser();
+            return Ok(response);
+        }
     }
 }
